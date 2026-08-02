@@ -43,12 +43,10 @@
             50% { transform: translate(30px, 20px); }
         }
         .logo-img {
-            width: 160px; height: auto;
-            margin: 0 auto 20px;
-            filter: drop-shadow(0 8px 25px rgba(184,134,11,0.35)) drop-shadow(0 0 15px rgba(201,166,107,0.5));
-        }
-        .symbol {
-            width: 70px; height: 70px; margin: 0 auto 15px;
+            width: 150px; height: auto;
+            margin: 0 auto 15px;
+            display: block;
+            filter: drop-shadow(0 8px 25px rgba(184,134,11,0.35));
         }
         h1 {
             font-family: 'Playfair Display', serif;
@@ -59,36 +57,36 @@
         .subtitle {
             font-size: 13px; color: #8c7355;
             letter-spacing: 3px; text-transform: uppercase;
-            margin-bottom: 30px; font-weight: 400;
+            margin-bottom: 25px; font-weight: 400;
         }
         .description {
-            font-size: 13px; color: #5a4a42;
-            line-height: 1.5; margin-bottom: 35px;
-            padding: 0 5px; font-weight: 300;
-            text-align: left;
-            white-space: nowrap;
+            font-size: 14px; color: #5a4a42;
+            line-height: 1.6; margin-bottom: 35px;
+            padding: 0 10px; font-weight: 300;
+            text-align: center;
         }
         .links-container { display: flex; flex-direction: column; gap: 14px; }
         .btn {
-            display: flex; align-items: center; justify-content: center; gap: 14px;
-            width: 100%; padding: 16px 24px; border-radius: 50px;
+            display: flex; align-items: center; justify-content: flex-start; gap: 16px;
+            width: 100%; padding: 15px 24px; border-radius: 50px;
             text-decoration: none; font-weight: 500; font-size: 14px;
             background: #fff; color: #2c2c2c;
             border: 1.5px solid #c9a66b;
             transition: all 0.3s ease;
             box-shadow: 0 4px 12px rgba(184,134,11,0.08);
         }
-        .btn:hover { background: #fdf6e3; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(201,166,107,0.35), 0 0 0 2px rgba(201,166,107,0.2); }
-
-        .btn-whatsapp .icon { color: #25d366; font-size: 18px; }
-        .btn-instagram .icon { color: #e1306c; font-size: 18px; }
-        .btn-facebook .icon { color: #1877f2; font-size: 18px; }
+        .btn:hover { background: #fdf6e3; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(201,166,107,0.35); }
+        .btn img {
+            width: 24px; height: 24px; object-fit: contain;
+            margin-left: 5px;
+        }
         .footer { margin-top: 30px; font-size: 11px; color: #a3907c; letter-spacing: 1.5px; }
     </style>
 </head>
 <body>
     <div class="card-container">
-            <img src="uploads/LOGO%20GUTHY.png" alt="Guthy Logo" class="logo-img">
+        <!-- Logo principal -->
+        <img src="LOGO%20GUTHY.png" alt="Guthy Logo" class="logo-img">
 
         <h1>GUTHY</h1>
         <div class="subtitle">Arte em Resina</div>
@@ -98,14 +96,19 @@
         </p>
 
         <div class="links-container">
-            <a href="https://wa.me/5515981638977" target="_blank" class="btn btn-whatsapp">
-                <span class="icon">💬</span> Fale Conosco no WhatsApp
+            <!-- Botão WhatsApp (Certifique-se de subir o arquivo zap.png) -->
+            <a href="https://wa.me/5515981638977" target="_blank" class="btn">
+                <img src="zap.png" alt="WhatsApp"> Fale Conosco no WhatsApp
             </a>
-            <a href="https://www.instagram.com/Guthy.arteemresina" target="_blank" class="btn btn-instagram">
-                <span class="icon">📸</span> Siga nosso perfil no Instagram
+            
+            <!-- Botão Instagram (Certifique-se de subir o arquivo insta.png) -->
+            <a href="https://www.instagram.com/Guthy.arteemresina" target="_blank" class="btn">
+                <img src="insta.png" alt="Instagram"> Siga nosso perfil no Instagram
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61553975993234" target="_blank" class="btn btn-facebook">
-                <span class="icon">📘</span> Acompanhe no Facebook
+            
+            <!-- Botão Facebook (Certifique-se de subir o arquivo face.png) -->
+            <a href="https://www.facebook.com/profile.php?id=61553975993234" target="_blank" class="btn">
+                <img src="face.png" alt="Facebook"> Acompanhe no Facebook
             </a>
         </div>
 
