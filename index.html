@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guthy Arte em Resina</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Biblioteca de ícones oficiais (Nunca quebram) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -43,10 +45,13 @@
             50% { transform: translate(30px, 20px); }
         }
         .logo-img {
-            width: 160px; height: auto;
+            width: 160px; height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
             margin: 0 auto 20px;
             display: block;
-            filter: drop-shadow(0 8px 25px rgba(184,134,11,0.35));
+            border: 2px solid #c9a66b;
+            box-shadow: 0 8px 25px rgba(184,134,11,0.35);
         }
         h1 {
             font-family: 'Playfair Display', serif;
@@ -76,16 +81,21 @@
             box-shadow: 0 4px 12px rgba(184,134,11,0.08);
         }
         .btn:hover { background: #fdf6e3; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(201,166,107,0.35); }
-        .btn img {
-            width: 24px; height: 24px; object-fit: contain;
+        .btn i {
+            font-size: 20px;
+            width: 24px;
+            text-align: center;
             margin-left: 5px;
         }
+        .fa-whatsapp { color: #25d366; }
+        .fa-instagram { color: #e1306c; }
+        .fa-facebook { color: #1877f2; }
         .footer { margin-top: 30px; font-size: 11px; color: #a3907c; letter-spacing: 1.5px; }
     </style>
 </head>
 <body>
     <div class="card-container">
-        <!-- Logo principal -->
+        <!-- Logo principal continua funcionando perfeitamente -->
         <img src="LOGO%20GUTHY.png" alt="Guthy Logo" class="logo-img">
 
         <h1>GUTHY</h1>
@@ -96,19 +106,19 @@
         </p>
 
         <div class="links-container">
-            <!-- Botão WhatsApp (esperando whatsapp.png) -->
+            <!-- Botão WhatsApp -->
             <a href="https://wa.me/5515981638977" target="_blank" class="btn">
-                <img src="whatsapp.png" alt="WhatsApp"> Fale Conosco no WhatsApp
+                <i class="fa-brands fa-whatsapp"></i> Fale Conosco no WhatsApp
             </a>
             
-            <!-- Botão Instagram (esperando insta.jfif) -->
+            <!-- Botão Instagram -->
             <a href="https://www.instagram.com/Guthy.arteemresina" target="_blank" class="btn">
-                <img src="insta.jfif" alt="Instagram"> Siga nosso perfil no Instagram
+                <i class="fa-brands fa-instagram"></i> Siga nosso perfil no Instagram
             </a>
             
-            <!-- Botão Facebook (esperando facebook.png) -->
+            <!-- Botão Facebook -->
             <a href="https://www.facebook.com/profile.php?id=61553975993234" target="_blank" class="btn">
-                <img src="facebook.png" alt="Facebook"> Acompanhe no Facebook
+                <i class="fa-brands fa-facebook"></i> Acompanhe no Facebook
             </a>
         </div>
 
